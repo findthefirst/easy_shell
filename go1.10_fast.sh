@@ -26,12 +26,12 @@ then
  tar -xvf go1.10.3.linux-amd64.tar.gz
 fi
 
-if [ -z $GO_ROOT ];
+if [ -z $GOROOT ];
 then 
  echo " " >> /etc/profile
  echo "#set golang environment" >> /etc/profile
- echo "export GO_ROOT=/usr/local/golang/go" >> /etc/profile
- echo "PATH=\$PATH:\$GO_ROOT/bin" >> /etc/profile
+ echo "export GOROOT=/usr/local/golang/go" >> /etc/profile
+ echo "PATH=\$PATH:\$GOROOT/bin" >> /etc/profile
 fi
 
 source /etc/profile
