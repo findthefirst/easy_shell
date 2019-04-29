@@ -34,6 +34,21 @@ then
  echo "PATH=\$PATH:\$GOROOT/bin" >> /etc/profile
 fi
 
+if [ -z $GOPATH ];
+then 
+ echo " " >> /etc/profile
+ echo "#set golang environment workspace" >> /etc/profile
+ echo "export GOPATH=/usr/local/golang/gopath" >> /etc/profile
+# echo "PATH=\$PATH:\$GOPATH/bin" >> /etc/profile
+fi
+
+if [ ! -d "/usr/local/golang/gopath/src" ];
+then
+ mkdir -p /usr/local/golang/gopath/src
+fi
+
+
+
 source /etc/profile
 #set environment
 #export JAVA_HOME="/usr/local/java/jdk1.8.0_131"
@@ -53,12 +68,12 @@ source /etc/profile
 #-d   file   True   if   file   exists   and   is   a   directory.
 #-f   file   True   if   file   exists   and   is   a   regular   file.
  
-echo "****************************************************************"
-echo "****************************************************************"
+echo "********************************************************************************************************************"
+echo "********************************************************************************************************************"
 echo " "
-echo "                   golang is installed !"
+echo "                                            golang is installed !"
 echo "Restart the terminal or manually execute   'source /etc/profile'   for the environment variable to take effect"
-echo "    重启终端 或者 手动执行 'source /etc/profile' 使得环境变量生效"
+echo "                            重启终端 或者 手动执行 'source /etc/profile' 使得环境变量生效"
 echo " "
-echo "****************************************************************"
-echo "****************************************************************"
+echo "********************************************************************************************************************"
+echo "********************************************************************************************************************"
