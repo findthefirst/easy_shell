@@ -53,5 +53,12 @@ source /etc/profile
  
 
 
-echo "jdk is installed !"
-echo "重启终端 或者 手动执行 source /etc/profile 使得环境变量生效"
+echo "****************************************************************"
+echo "****************************************************************"
+echo " "
+echo "                   jdk is installed !"
+echo "Restart the terminal or manually execute   'source /etc/profile'   for the environment variable to take effect"
+echo "    重启终端 或者 手动执行 'source /etc/profile' 使得环境变量生效"
+echo " "
+echo "****************************************************************"
+echo "****************************************************************"

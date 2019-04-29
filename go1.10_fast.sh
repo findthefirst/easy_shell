@@ -53,7 +53,12 @@ source /etc/profile
 #-d   file   True   if   file   exists   and   is   a   directory.
 #-f   file   True   if   file   exists   and   is   a   regular   file.
  
-
-
-echo "golang is installed !"
-echo "重启终端 或者 手动执行 source /etc/profile 使得环境变量生效"
+echo "****************************************************************"
+echo "****************************************************************"
+echo " "
+echo "                   golang is installed !"
+echo "Restart the terminal or manually execute   'source /etc/profile'   for the environment variable to take effect"
+echo "    重启终端 或者 手动执行 'source /etc/profile' 使得环境变量生效"
+echo " "
+echo "****************************************************************"
+echo "****************************************************************"
